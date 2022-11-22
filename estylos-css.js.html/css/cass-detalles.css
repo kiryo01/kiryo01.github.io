@@ -1,0 +1,158 @@
+#content.manga-info {
+	position: unset;
+	max-width: 1100px;
+	margin-top: 0;
+}
+#content.manga-info .postbody.full {
+	z-index: 1;
+	position: relative;
+	padding-top: 125px;
+}
+#content {
+	overflow: hidden;
+	max-width: 1220px;
+	margin: 0 auto;
+	margin-top: 35px;
+	position: relative;
+	padding-bottom: 270px;
+}
+
+@media only screen and (max-width: 800px) {
+	.postbody {
+		float: none;
+		width: auto;
+	}
+	.bixbox {
+		border-radius: 0;
+		margin-bottom: 5px;
+	}
+	
+	.meta {
+		margin-bottom: 5px;
+	}
+	.manga-info .bixbox {
+		margin: 0 20px;
+		margin-bottom: 10px;
+	}
+}
+
+.postbody p {
+	margin: 10px 0;
+}
+
+.postbody {
+	float: left;
+	width: 70%;
+}
+
+.postbody.full {
+	float: none;
+	width: auto;
+}
+
+@media only screen and (max-width: 880px) {
+	.postbody {
+		float: none;
+		width: auto;
+	}
+}
+
+.main-info .info-desc h1 {
+	margin: 0;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 28px;
+	color: rgb(255, 255, 255);
+}
+.main-info .wd-full {
+	margin-top: 15px;
+}
+
+.main-info .info-desc .wd-full h2 {
+	margin: 0;
+	font-size: 14px;
+	margin-bottom: 5px;
+	display: block;
+	color: #ffffff;
+	font-weight: 500;
+}
+.main-info .wd-full span {
+	display: block;
+}
+.main-info .wd-full p {
+	margin: 0;
+}
+.main-info .wd-full .mgen {
+	display: block;
+	overflow: hidden;
+}
+.main-info .wd-full .mgen a {
+	display: inline-block;
+	margin-right: 3px;
+	margin-bottom: 6px;
+	background: var(--primary);
+	padding: 4px 12px;
+	border-radius: 3px;
+}
+.main-info .wd-full .entry-content.entry-content-single {
+	line-height: 24px;
+}
+.main-info {
+	overflow: hidden;
+}
+.main-info .info-right {
+	overflow: hidden;
+}
+
+.bixbox {
+	background: rgba(34, 34, 34, 0.371);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin-bottom: 18px;
+	overflow: hidden;
+	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	-khtml-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	-ms-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	-o-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 450px) {
+	
+	.imptdt a {
+		float: none;
+		display: block;
+		margin-top: 2px;
+	}
+}
+
+.imptdt {
+	padding: 7px 10px;
+	overflow: hidden;
+	font-size: 13px;
+}
+
+.imptdt a {
+	font-style: normal;
+	float: right;
+	color: var(--primary);
+}
+
+.info-desc {
+	padding: 15px;
+}
+.info-desc h1 {
+	margin: 0;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 28px;
+	color: rgb(255, 255, 255);
+}
+.info-desc .alternative {
+	margin-top: 5px;
+	display: block;
+	font-size: 13px;
+	color: rgb(255, 255, 255);
+}
