@@ -1,0 +1,129 @@
+:root {
+	--gray: #333;
+	--gray-light: rgba(255, 255, 255, 0.7);
+	--white: #fff;
+	--black: #000;
+	--green: rgba(36, 78, 120, 0.5);
+	--red: rgba(229, 62, 62, 0.5);
+	--facebook: #3a579a;
+	--twitter: #00a6ea;
+	--size: 1rem;
+	--space: 1rem;
+	--grid: 10rem;
+	--sans: 'Asap Condensed', sans-serif;
+	--jordan: #e30000;
+	--jesus: #f78708;
+	--kiryo: #32b58d;
+	--morado: #8e2de2;
+}
+
+*,
+:before,
+:after {
+	box-sizing: border-box;
+	min-width: 0;
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	font-size: 100%;
+}
+
+body {
+	margin: 0;
+	word-wrap: break-word;
+	line-height: 1.8;
+	background-color: var(--body);
+	color: var(--text);
+	font-family: var(--sans);
+	font-size: var(--size);
+}
+
+#nuevos-episodios {
+	color: var(--jesus);
+}
+
+#series-completas {
+	color: var(--morado);
+}
+
+.mv-tb .btn {
+	color: var(--text);
+}
+
+.mv-tb .btn:before {
+	content: '';
+	position: absolute;
+	max-width: 0;
+	bottom: -1rem;
+	height: 4px;
+	left: 0;
+	right: 0;
+	transition: 0.3s;
+	margin: auto;
+}
+
+.mv-tb .btn.is-active {
+	color: var(--white);
+}
+
+.mv-tb .btn.is-active:before {
+	background-color: var(--twitter);
+	max-width: 100%;
+}
+.mab2 {
+	margin-bottom: 2rem;
+}
+
+.btn,
+button,
+[type='button'] {
+	cursor: pointer;
+	padding: calc(0.25 * var(--size)) calc(0.75 * var(--size));
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: auto;
+	background-color: var(--primary);
+	color: var(--white);
+	border: 0;
+	border-radius: 0.25rem;
+	line-height: 2rem;
+	min-width: 2rem;
+}
+
+.btn:hover,
+button:hover,
+[type='button']:hover {
+	background-color: var(--secondary);
+	color: var(--white);
+}
+
+.btn-lg {
+	padding: calc(0.5 * var(--size)) var(--size);
+	min-width: calc(3 * var(--size));
+}
+
+.btn.btn-link {
+	background-color: transparent;
+}
+
+.btn-link {
+	color: var(--link);
+}
+
+.por {
+	position: relative;
+}
+
+button {
+	font: inherit;
+	width: 100%;
+	vertical-align: middle;
+	line-height: normal;
+	text-transform: none;
+	overflow: visible;
+}
