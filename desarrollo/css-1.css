@@ -1,0 +1,81 @@
+:root {
+
+    --text: #787d8f;
+    --text-secundario: #ffffff;
+    --yellow: #00c3ff;
+    --primary: #0077ff;
+    --pelicula: #ff0000;
+    --serie: #ffae00;
+    --ova: #ae00ff;
+    --border: 3px;
+  }
+  
+  #container{
+    padding: 1rem;
+  }
+  #container p{
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  #container h2{
+    color: var(--text-secundario);
+    margin-bottom: 5px;
+  }
+  
+  #span::before{
+    content: "MAS DETALLES";
+    font-size: .75rem;
+    line-height: 2rem;
+    color: var(--yellow);
+    cursor: pointer;
+  }
+  #container.active p{
+    display: block;
+  }
+  #container.active #span::before{
+    content: "MENOS DETALLES";
+  
+  }
+  
+  
+  
+  
+  .main-info .wd-full .mgen a  {
+      display: inline-block;
+      margin-right: 5px;
+    margin-top: 10px;
+      background: var(--primary);
+      padding: 1px 5px;
+      border-radius: var(--border);
+  }
+  
+  a{
+    color: var(--text-secundario);
+  }
+  
+  
+  .pdx{
+      padding: 1px 5px;
+    border-radius: var(--border);
+  }
+  
+  .pelicula {
+      background-color: var(--pelicula);
+  }
+  .serie {
+      background-color: var(--serie);
+  }
+  .ova {
+      background-color: var(--ova);
+  }
+  
+  .di {
+      display: inline-flex !important;
+  }
+  
