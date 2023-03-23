@@ -1,81 +1,307 @@
+/*colores de contenido portada*/
 :root {
+  --body: #000000;
+  --body-2: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  --text: #787d8f;
+  --text-secundario: #ffffff;
+  --yellow: #00c3ff;
+  --primary: #0077ff;
+  --pelicula: #ff0000;
+  --serie: #ffae00;
+  --ova: #ae00ff;
+  --border: 3px;
+}
 
-    --text: #787d8f;
-    --text-secundario: #ffffff;
-    --yellow: #00c3ff;
-    --primary: #0077ff;
-    --pelicula: #ff0000;
-    --serie: #ffae00;
-    --ova: #ae00ff;
-    --border: 3px;
+.pelicula {
+  background-color: var(--pelicula);
+}
+
+.serie {
+  background-color: var(--serie);
+}
+
+.ova {
+  background-color: var(--ova);
+}
+
+/*fin-colores de contenido portada*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+      'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  background-color: var(--body);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+/*imagenes-portada*/
+
+img {
+  border-style: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none
+}
+
+.portada {
+  background-size: 100%;
+  background-attachment: fixed;
+
+  margin-bottom: 1.75rem;/*1.75*/
+  overflow: hidden;
+  position: relative
+}
+
+.portada .portada1:before {
+  background-image: linear-gradient(180deg, #00000000, #00000000);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  opacity: .7;
+  position: absolute;
+  width: 100%
+}
+
+.portada .dos {
+  display: none;
+  filter: blur(.5375rem);
+  height: calc(100% + 1.075rem);
+  left: 50%;
+  opacity: .5;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 6.25rem);
+  z-index: -1
+}
+
+.portada .background-wrapper {
+  display: flex;
+  justify-content: center;
+  max-height: calc(100vh - 16.25rem);
+  min-height: 15rem;
+  position: relative
+}
+
+.portada .background-image {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0
+}
+
+.portada .background {
+  --content-image-object-fit: contain;
+  display: none;
+  z-index: 1
+}
+
+.portada .skeleton {
+  display: none;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100vw
+}
+
+.portada .background-frame {
+  display: flex;
+  max-height: 31.5rem;
+  max-width: 20.9375rem;
+  min-height: 15rem;
+  min-width: 9.9375rem;
+  overflow: hidden
+}
+
+.portada .tall-image {
+  display: block
+}
+
+@media(min-width:35.5em) {
+  .portada {
+      margin-bottom: 2.125rem
   }
-  
-  #container{
-    padding: 1rem;
+
+  .portada .background-wrapper {
+      max-height: calc(100vh - 28.75rem)
   }
-  #container p{
-    color: var(--text);
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 5px;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+
+  .portada .background-frame {
+      max-height: 24.1875rem;
+      max-width: 43rem;
+      min-width: 26.75rem
   }
-  #container h2{
-    color: var(--text-secundario);
-    margin-bottom: 5px;
+
+  .portada .tall-image {
+      display: none
   }
-  
-  #span::before{
-    content: "MAS DETALLES";
-    font-size: .75rem;
-    line-height: 2rem;
-    color: var(--yellow);
-    cursor: pointer;
+
+  .portada .wide-image {
+      display: block
   }
-  #container.active p{
-    display: block;
+}
+
+@media(min-width:50rem) {
+  .portada {
+      margin-bottom: 2.5rem
   }
-  #container.active #span::before{
-    content: "MENOS DETALLES";
-  
+
+  .portada .background-frame {
+      max-height: 36.8125rem;
+      max-width: 65.625rem
   }
-  
-  
-  
-  
-  .main-info .wd-full .mgen a  {
-      display: inline-block;
-      margin-right: 5px;
-    margin-top: 10px;
-      background: var(--primary);
-      padding: 1px 5px;
-      border-radius: var(--border);
+}
+
+
+
+.uno {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0
+}
+
+.portada-max {
+  display: block;
+  height: 100%;
+  object-fit: var(--content-image-object-fit, cover);
+  width: 100%
+}
+
+.lindo{
+  content:"";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+
+@media (min-width: 1400px) {
+  .serie-single {
+    grid-template-rows: max-content;
   }
-  
-  a{
-    color: var(--text-secundario);
+}
+
+@media (min-width: 1400px) {
+  .xl-gt2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  
-  
-  .pdx{
-      padding: 1px 5px;
+}
+
+.dg {
+  display: grid !important;
+}
+/*termino-imagenes-portada*/
+
+
+/*contenido detalles*/
+
+#container{
+  padding: 0.5rem;
+}
+
+#container h2{
+  color: var(--text-secundario);
+  margin-bottom: 5px;
+}
+
+#container p{
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+#span::before{
+  content: "MAS DETALLES";
+  font-size: .75rem;
+  line-height: 2rem;
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+#container.active p{
+  display: block;
+}
+
+#container.active #span::before{
+  content: "MENOS DETALLES";
+}
+
+
+
+
+.main-info .wd-full .mgen a  {
+    display: inline-block;
+    margin-right: 5px;
+  margin-top: 10px;
+    background: var(--primary);
+    padding: 1px 5px;
     border-radius: var(--border);
-  }
-  
-  .pelicula {
-      background-color: var(--pelicula);
-  }
-  .serie {
-      background-color: var(--serie);
-  }
-  .ova {
-      background-color: var(--ova);
-  }
-  
-  .di {
-      display: inline-flex !important;
-  }
-  
+}
+
+a{
+  color: var(--text-secundario);
+}
+
+
+.pdx{
+    padding: 1px 5px;
+  border-radius: var(--border);
+}
+
+.di {
+    display: inline-flex !important;
+}
+
+  /*termino-contenido detalles*/
+
+
+  /*contenido informacion*/
+
+  #datos{
+      color: var(--text);
+      font-size: 15px;
+      column-count: 2;
+      column-width: 100;
+    }
+    
+    span{
+      color: var(--ova);
+      margin-left: 3px;
+    }
+    
+    /*termino contenido informacion*/
