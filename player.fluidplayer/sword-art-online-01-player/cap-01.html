@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/player.fluidplayer/fluidplayer.css">
+
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+<video class="trix" id="video-id"><source src="https://drive.google.com/uc?export=download&id=1v2F0cAvdzF0wVCusCHUOgee-Bi_VMLe7" type="video/mp4" />
+<script>
+    var myFP = fluidPlayer(
+        'video-id',	{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 3,
+			"animated": true,
+			"autoHide": true
+		},
+		"htmlOnPauseBlock": {
+			"html": null,
+			"height": null,
+			"width": null
+		},
+		"autoPlay": true,
+		"mute": true,
+		"allowTheatre": true,
+		"playPauseAnimation": false,
+		"playbackRateEnabled": false,
+		"allowDownload": true,
+		"playButtonShowing": false,
+		"fillToContainer": false,
+		"primaryColor": "",
+		"posterImage": ""
+	},
+	"vastOptions": {
+		"adList": [],
+		"adCTAText": false,
+		"adCTATextPosition": ""
+	}
+});
+</script>
