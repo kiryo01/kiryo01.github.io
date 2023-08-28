@@ -65,7 +65,7 @@ img {
   background-size: 100%;
   background-attachment: fixed;
 
-  margin-bottom: 1.75rem;/*1.75*/
+  margin-bottom: 1.75rem; /*1.75*/
   overflow: hidden;
   position: relative
 }
